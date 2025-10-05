@@ -33,12 +33,12 @@
 
 /* Shoe Section Styling */
 .content {
-  max-width: 900px;             /* Keep content centered */
-  margin: 40px auto;            /* Center with space on top/bottom */
-  text-align: center;           /* Center align text */
+  max-width: 900px;             
+  margin: 40px auto;            
+  text-align: center;           
   padding: 20px;
-  background: #f9f9f9;          /* Light background */
-  border-radius: 12px;          /* Smooth corners */
+  background: #f9f9f9;         
+  border-radius: 12px;          
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
@@ -49,9 +49,9 @@
 }
 
 .content img {
-  width: 100%;                  /* Make image responsive */
-  max-width: 800px;             /* Restrict max width */
-  border-radius: 10px;          /* Rounded image corners */
+  width: 100%;                  
+  max-width: 800px;             
+  border-radius: 10px;          
   margin-bottom: 20px;
 }
 
