@@ -1,0 +1,14 @@
+.externalcss{
+    color: tomato;
+    font-size: larger;
+    font-weight: bolder;
+}
+.info{
+    color: goldenrod;
+    background: rgb(194, 194, 243);
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+}
