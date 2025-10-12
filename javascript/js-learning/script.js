@@ -23,18 +23,54 @@ console.log(age)
 console.log(Major)
 console.log(uni)
 
-// basic calculator using arithmetic operators
-let firstNumber = prompt('Enter your first Number:')
-let secondNumber = prompt("Enter your second Number:")
 
-let sum = firstNumber + secondNumber;
-let subtract = firstNumber - secondNumber;
-let multiply = firstNumber * secondNumber;
-let divide = firstNumber / secondNumber;
+// challenge
+console.log('Hello World')
 
-console.log('Sum of your Two Numbers:', sum);
-console.log('Stbtraction of your Two Numbers:', subtract);
-console.log('Multiplication of your Two Numbers:', multiply);
-console.log('Division of your Two Numbers:', divide);
+console.log('Hello, My name is Muhammad Bilal and I want to become a full stack website developer.')
+
+let myName = 'Muhammad Bilal'
+let myAge = 24
+
+let myIntro = 'My Name is ' + myName + 'and My age is ' + myAge
+console.log(myIntro)
+
+// initialize two variables and output their sum, minus, multiply and division
+
+
+// let firstNumber = prompt('Enter your first Number:')
+// let secondNumber = prompt("Enter your second Number:")
+
+// let sum = firstNumber + secondNumber;
+// let subtract = firstNumber - secondNumber;
+// let multiply = firstNumber * secondNumber;
+// let divide = firstNumber / secondNumber;
+
+// console.log('Sum of your Two Numbers:', sum);
+// console.log('Stbtraction of your Two Numbers:', subtract);
+// console.log('Multiplication of your Two Numbers:', multiply);
+// console.log('Division of your Two Numbers:', divide);
+
+
+// BMI calculator for Mark and Jhon
+let markMass = 60
+let markHeight = 6
+
+let jhonMass = 70
+let jhonHeight = 5
+
+let markBMI = markMass / (markHeight * markHeight)
+let jhonBMI = jhonMass / (jhonHeight * jhonHeight)
+
+console.log('Mark BMI ', markBMI)
+console.log('Jhon BMI ', jhonBMI)
+
+
+// celcius to frnheight
+
+let celcius = 37
+
+let frn = (9/5) * celcius + 32
+console.log(frn)
 
 
