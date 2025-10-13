@@ -1,0 +1,28 @@
+.parent{
+    background-color: chocolate;
+    height: 400px;
+    width: 300px;
+    padding: 50px;
+}
+.child{
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+}
+img{
+    width: 300px;
+}
+.parentdiv{
+    position: relative;
+    width: fit-content;
+}
+.childdiv{
+    position: absolute;
+    background-color: brown;
+    padding: 2px 20px;
+    border-radius: 10px;
+    top: 5px;
+    right: 5px;
+    color: white;
+}
