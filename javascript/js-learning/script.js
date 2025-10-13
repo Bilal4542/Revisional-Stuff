@@ -74,3 +74,24 @@ let frn = (9/5) * celcius + 32
 console.log(frn)
 
 
+console.log('Welcome to the Full Stack Web Development BootCamp')
+
+console.log('I am learning JavaScript')
+console.log('Practice makes a developer perfect')
+console.log('I will stay consistent every day')
+
+console.log('My Favourite language is "JavaScript"')
+
+let firstName = 'Muhammad Bilal'
+let city = 'Peshawar'
+console.log(`My name is ${firstName} and I live in ${city}`)
+
+let fName = 'Muhammad Bilal'
+let course = 'Website Development'
+let goal = 'To be Full Stack Website Developer IN SHA ALLAH'
+console.log(`My name is ${fName}, my cousre is ${course} and my goal is ${goal}`)
+
+
+
+
+
