@@ -124,22 +124,20 @@
 }
 .footer-head{
     background-color: black;
+    padding-top: 10px;
+    padding-bottom: 60px;
 }
 .main-footer{
     width: 90%;
-    height: 250px;
     margin: auto;
     margin-top: 75px;
     display: flex;
-    align-items: center;
     justify-content: space-around;
 }
 .about-section{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: center;
-    justify-content: center;
 }
 .about-section h2{
     color: white;
@@ -148,3 +146,56 @@
     color: white;
     text-decoration: none;
 }
+.contact-section h2{
+    color: white;
+}
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-section a{
+    color: white;
+    text-decoration: none;
+}
+.email i{
+    color: rgb(255, 255, 0);
+    border: rgb(255, 255, 0) solid 1px;
+    padding: 4px;
+    border-radius: 100%;
+    margin-right: 6px;
+}
+.num i{
+    color: rgb(255, 255, 0);
+      border: rgb(255, 255, 0) solid 1px;
+    padding: 4px;
+    border-radius: 100%;
+    margin-right: 6px;
+}
+  .working i{
+    color: rgb(255, 255, 0);
+      border: rgb(255, 255, 0) solid 1px;
+    padding: 4px;
+    border-radius: 100%;
+    margin-right: 6px;
+  }
+  .social-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .social-links h2{
+    color: white;
+  }
+  .social-links a{
+    color: white;
+    text-decoration: none;
+  }
+  .insta i{
+    color: white;
+    margin-right: 6px;
+  }
+  .facebook i{
+    color: white;
+    margin-right: 6px;
+  }
