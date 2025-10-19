@@ -139,3 +139,34 @@ else{
     console.log('Not playing');
 }
 
+
+// let char = prompt('Enter Character: ')
+// if(char === 'a' || char === 'i' || char === 'o' || char === 'u' || char === 'e'){
+//     console.log('vowel');
+// }
+// else{
+//     console.log('constant');
+// }
+
+// LOOPS
+  for (let i = 1; i <= 10; i++) {
+      console.log(i);
+    }
+
+// even numbers
+for(let even = 0; even <= 20; even = even + 2){
+    console.log(even)
+}
+
+// print table
+for(let table = 1; table <=10; table++){
+    console.log(`11 x ${table} = ${table * 11}`)
+}
+
+// calculate the sum of 1st hundred numbers
+
+let sum = 0;
+for(let i = 1; i <=100; i++){
+    sum = sum + i
+}
+console.log('Sum of 1st Hundred Numbers is ', sum)
