@@ -127,4 +127,15 @@ if(marks > 80){
 }
 
 
+// logical operators
+
+let kids = 'playing'
+let rain = 'yes'
+
+if(kids === 'playing' && rain === 'yes'){
+    console.log('will be play outside');
+}
+else{
+    console.log('Not playing');
+}
 
