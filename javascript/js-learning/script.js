@@ -92,6 +92,39 @@ let goal = 'To be Full Stack Website Developer IN SHA ALLAH'
 console.log(`My name is ${fName}, my cousre is ${course} and my goal is ${goal}`)
 
 
+// conditions
+
+let yourAge = 12;
+if(yourAge > 18){
+    console.log('User can vote');
+}else{
+    console.log('User Cannot vote');
+    
+}
+
+let gender = 'female'
+if(gender === 'male'){
+    console.log('Hi Mr.');
+}else{
+    console.log('Hi Miss.');
+    
+}
+
+// nested if else
+
+let marks = 44
+
+if(marks > 80){
+    console.log('Excellent');
+}else if(marks > 70){
+    console.log('Good');
+}else if(marks > 60){
+    console.log('Not Bad');
+}else if(marks > 50){
+    console.log('More Effort Required');
+}else{
+    console.log('Fail');
+}
 
 
 
