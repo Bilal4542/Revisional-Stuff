@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 671px;
+    width: 70%;
+    background-color: rgba(19, 20, 33, 1);
+}
+.right{
+    height: 671px;
+    width: 30%;
+    background-color: rgba(186, 26, 26, 1);
+}
+.left-content{
+    color: white;
+    position: absolute;
+    top: 203px;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.left-content h1{
+    line-height: 40px;
+}
+.left-content p{
+    width: 350px;
+    line-height: 25px;
+}
+.left-content button{
+    width: fit-content;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+}
+.right-content{
+    position: absolute;
+    top: 80px;
+    right: 120px;
+}
+.right-content img{
+    width: 425px;
+    height: 425px;
+    border-radius: 30px;
+}
