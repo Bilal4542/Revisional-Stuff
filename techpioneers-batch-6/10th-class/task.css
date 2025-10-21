@@ -1,21 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: "Nunito Sans", sans-serif;
 }
+
 .main-container{
     width: 100%;
     display: flex;
     position: relative;
 }
 .left{
-    height: 671px;
+    height: 600px;
     width: 70%;
     background-color: rgba(19, 20, 33, 1);
 }
 .right{
-    height: 671px;
+    height: 600px;
     width: 30%;
     background-color: rgba(186, 26, 26, 1);
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    /* background-color: aqua; */
+}
+.logo img{
+    width: 100px;
+    /* background-color: white; */
+    border-radius: 100%;
+    color: white;
+}
+.menu{
+    display: flex;
+    gap: 30px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.btn{
+    display: flex;
+    gap: 15px;
+}
+.btn button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.btn button a{
+    text-decoration: none;
+    color: black;
 }
 .left-content{
     color: white;
@@ -41,11 +84,60 @@
 }
 .right-content{
     position: absolute;
-    top: 80px;
+    top: 100px;
     right: 120px;
 }
 .right-content img{
     width: 425px;
     height: 425px;
     border-radius: 30px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 50px;
+}
+.img-and-des{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.img-and-des img{
+    width: 40px;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.sub-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    width: 350px;
+    height: 442px;
+}
+.sub-card img{
+    width: 350px;
+    height: 350px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;   
+}
+.sub-card p{
+    padding: 20px;
+    background-color: rgba(19, 20, 33, 1);
+    width: 310px;
+    color: white;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    text-align: center;
 }
