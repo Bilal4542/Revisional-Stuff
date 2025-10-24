@@ -170,3 +170,48 @@ for(let i = 1; i <=100; i++){
     sum = sum + i
 }
 console.log('Sum of 1st Hundred Numbers is ', sum)
+
+
+// Functions
+
+function myDetails(){
+    console.log('Name: Muhammad Bilal')
+    console.log('Age: ' + 24)
+    console.log('Role: Software Engineer')
+    console.log('Islamia College Peshawar')
+}
+myDetails()
+
+
+// add number of child
+
+function add(num1, num2){
+    console.log(num1 + num2)
+}
+console.log('Number of 1st child:')
+add(30,10)
+console.log('Number of 2nd child:')
+add(90, 50)
+console.log('Number of 3rd child:')
+add(43, 29)
+
+
+// age Calculator
+
+function ageCalculator(dateOfBirth, name){
+    let yoursAge = 2025 - dateOfBirth
+    console.log(`Age of ${name} is ${yoursAge} years`)
+}
+ageCalculator(2001, 'Bilal')
+
+
+// write a function to check the number if the number is even return true or if the number is odd return false
+
+const isEven = (num) =>{
+    if (num % 2 ===0) {
+        return true
+    }else{
+        return false
+    }
+}
+console.log(isEven(67))
