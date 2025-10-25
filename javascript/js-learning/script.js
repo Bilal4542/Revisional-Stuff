@@ -256,8 +256,71 @@ for(let i = 0 ; i <= 4 ; i++){
 
 // write a program that takes input 5 numbers from users and store it in an array and return the sum of the numbers
 
-let nums = [0,0,0,0,0];
+/* let nums = [0,0,0,0,0];
  for(let i = 0 ; i <= 4 ; i++){
     nums[i] = Number(prompt('Enter Number:'))
  }
  console.log(nums[0]+nums[1]+nums[2]+nums[3]+nums[4])
+
+*/
+//  objects
+
+let studentsData = [
+    {
+        name: 'Bilal',
+        age: 24,
+        address: 'Peshawar',
+        major: 'software engineering'
+    },
+    {
+        name: 'Saad',
+        age: 24,
+        address: 'Peshawar',
+        major: 'software engineering'
+    },
+    {
+        name: 'Usman',
+        age: 24,
+        address: 'Peshawar',
+        major: 'software engineering'
+    },
+    {
+        name: 'Waqas',
+        age: 24,
+        address: 'Peshawar',
+        major: 'software engineering'
+    }
+]
+console.log(studentsData)
+
+// write a funcction called calculate total price that takes input in an array of items represent an object properties for name and price and return the total price of all items in an array
+
+
+const calculateTotalPrice = (array) => {
+    let sums = 0;
+    for(let i = 0; i<=3; i++){
+        sums = sums+array[i].price
+    }
+    return sums
+}
+
+let items = [
+    {
+        name: 'Burger',
+        price: 350
+    },
+    {
+        name: 'Pizza',
+        price: 1650
+    },
+    {
+        name: 'Pasta',
+        price: 200
+    },
+    {
+        name: 'Shwarma',
+        price: 250
+    }
+]
+let totalpr = calculateTotalPrice(items)
+console.log(totalpr)
