@@ -215,3 +215,28 @@ const isEven = (num) =>{
     }
 }
 console.log(isEven(67))
+
+// write a function that convert the temperature in celciues to tremperature in farnheite
+
+const convertTemperature = () => {
+    let temperature = (9/5 * celcius) + 32
+    return temperature
+}
+console.log(convertTemperature(37))
+
+
+// write a function that count vovels in the string
+
+const countVowels = (str) =>{
+    let count = 0;
+
+    for (let i = 0; i <= str.length; i++) {
+        if(str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u'){
+            count = count + 1
+        }
+        
+    }
+
+    return count;
+}
+console.log(countVowels('saad'))
