@@ -240,3 +240,24 @@ const countVowels = (str) =>{
     return count;
 }
 console.log(countVowels('saad'))
+
+
+
+// arrays
+
+let studentsNames = ['Bilal', 'Sasd', 'Waqas', 'Usman', 'Haris']
+let studentsAge = [24, 23, 22, 21, 20]
+let studentsAdress = ['Peshawar', 'UK', 'NizamPur', 'UK', 'Buner' ]
+
+for(let i = 0 ; i <= 4 ; i++){
+    console.log(`${studentsNames[i]} is ${studentsAge[i]} years old and is living in ${studentsAdress[i]}`)
+}
+
+
+// write a program that takes input 5 numbers from users and store it in an array and return the sum of the numbers
+
+let nums = [0,0,0,0,0];
+ for(let i = 0 ; i <= 4 ; i++){
+    nums[i] = Number(prompt('Enter Number:'))
+ }
+ console.log(nums[0]+nums[1]+nums[2]+nums[3]+nums[4])
