@@ -324,3 +324,41 @@ let items = [
 ]
 let totalpr = calculateTotalPrice(items)
 console.log(totalpr)
+
+
+// DOM
+// select elemenet by tag
+let head = document.querySelector('h1')
+console.log(head)
+
+// select element by class
+let para = document.querySelector('.para')
+console.log(para)
+
+// change content in element
+head.innerHTML='learning facce'
+para.textContent='My name is Muhammad Bilal'
+
+// change in attributes
+let link = document.querySelector('a')
+link.setAttribute('href', 'https://www.facebook.com')
+
+let image = document.querySelector('img')
+image.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNubLmqdOK9pZWU-2IiD20cuSIdUUDi9-NvQ&s')
+
+
+// change style / css
+
+let parag = document.querySelector('.info')
+parag.style.color = 'red'
+parag.style.background='yellow'
+parag.style.padding= '30px'
+
+// events and events listener
+
+let handleClick = ()=> {
+    parag.style.background= 'white'
+}
+
+let btn = document.querySelector('button')
+btn.addEventListener('click', handleClick)
