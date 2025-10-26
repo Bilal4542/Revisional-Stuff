@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #e872d2;
+    background: linear-gradient(37deg, rgb(187, 238, 249) 16%, rgba(126, 202, 230, 1) 71%);
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quote{
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.quote button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(126, 202, 230, 1);
+    margin-top: 30px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(187, 238, 249);
+    transition: all 1s;
+}
