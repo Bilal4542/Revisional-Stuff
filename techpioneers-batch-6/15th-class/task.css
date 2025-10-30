@@ -283,12 +283,114 @@ nav{
   align-items: center;
   gap: 10px;
 }
+.cust-revs p{
+  font-size: 14px;
+}
 .user{
   text-transform: uppercase;
   font-weight: 700;
 }
 
-
+.contact-head{
+  text-align: center;
+  font-weight: 800;
+  color: rgba(51, 55, 64, 1);
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.contact-main{
+  width: 80%;
+  margin: auto;
+}
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 450px; */
+  margin: 50px 0;
+}
+.icons a img{
+  width: 80%;
+}
+.search{
+}
+.search input{
+  outline: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 150px;
+  border-radius: 40px;
+}
+.search button{
+  padding: 10px 30px;
+  border-radius: 40px;
+  border: none;
+  background-color: rgba(255, 191, 61, 1);
+  color: white;
+}
+footer{
+  background-color: rgba(255, 191, 61, 0.1);
+  padding: 60px 0;
+}
+.main-footer{
+  display: flex;
+  justify-content: space-around;
+}
+.foot-logo p{
+  font-weight: 800;
+  font-size: 40px;
+  color: rgba(51, 55, 64, 1);
+  text-transform: uppercase;
+}
+.shop{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.shop h1{
+  font-size: 32px;
+  color: rgba(51, 55, 64, 1);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.shop a{
+  font-size: 16px;
+  color: rgba(51, 55, 64, 1);
+  text-decoration: none;
+}
+.customer-support{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.customer-support h1{
+   font-size: 32px;
+  color: rgba(51, 55, 64, 1);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.customer-support a{
+  font-size: 16px;
+  color: rgba(51, 55, 64, 1);
+  text-decoration: none;
+}
+.store-location{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.store-location h1{
+   font-size: 32px;
+  color: rgba(51, 55, 64, 1);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.store-location p{
+  font-size: 16px;
+  color: rgba(51, 55, 64, 1);
+  text-decoration: none;
+}
 @media (max-width: 992px) {
   nav {
     justify-content: space-between;
