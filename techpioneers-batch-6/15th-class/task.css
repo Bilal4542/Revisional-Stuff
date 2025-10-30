@@ -81,9 +81,212 @@ nav{
     border-radius: 40px;
     width: fit-content;
 }
+.images-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 550px;
+  margin-bottom: 30px;
+}
+.images-main{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 80%;
+}
+.images{
+  background-color: rgba(47, 47, 47, 1);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.images img{
+  width: fit-content;
+  height: 300px;
+}
+.images p{
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
 
 
-
+.main-head-btn{
+    position: relative;
+    width: 90%;
+    margin-top: 40px;
+}
+.main-head-btn h1{
+    position: absolute;
+    left: 440px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgba(51, 55, 64, 1);
+}
+.main-head-btn a{
+    position: absolute;
+    right: 0px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+    color: rgba(255, 191, 61, 1);
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.new-arr-imgs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    width: 90%;
+    margin: auto;
+}
+.img-content{
+    margin: 100px 0;
+}
+.image{
+    background-color: rgba(47, 47, 47, 0.1);
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image img{
+    width: 220px;
+    height: 260px;
+}
+.para{
+    padding: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+.old-price{
+    margin-right: 5px;
+    color: rgba(47, 47, 47, 0.7);
+    text-decoration: line-through;
+    text-decoration-color: rgba(255, 32, 34, 1);
+}
+.new-price{
+    color: rgba(47, 47, 47, 1);
+    font-weight: 800;
+}
+.ratings{
+    font-weight: 700;   
+}
+.hero-main-2{
+  position: relative;
+}
+.hero-main-2 img{
+  width: 100%;
+}
+.text-btn{
+  position: absolute;
+  top: 170px;
+  left: 50px;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.text-btn p{
+   font-size: 30px;
+  font-weight: 700;
+  color: rgba(255, 191, 61, 1);
+  text-transform: uppercase;
+}
+.text-btn a{
+   text-decoration: none;
+    background-color: rgba(255, 191, 61, 1);
+    color: white;
+    padding: 10px 50px;
+    border-radius: 40px;
+    width: fit-content;
+}
+.about-head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-about{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.img-div img{
+  height: 550px;
+}
+.para-div{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-transform: uppercase;
+}
+.para-div h1{
+  font-size: 40px;
+  font-weight: 700;
+}
+.para-div h4{
+  font-size: 26px;
+  font-weight: 700;
+}
+.para-div a{
+  text-decoration: none;
+    background-color: rgba(255, 191, 61, 1);
+    color: white;
+    padding: 10px 50px;
+    border-radius: 40px;
+    width: fit-content;
+}
+.customer-reviews{
+  background-color: rgba(255, 191, 61, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 70px 0;
+  
+}
+.cust-revs-main{
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.customer-reviews h1{
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px 0;
+}
+.reviews{
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 40px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.cust-name-img{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.user{
+  text-transform: uppercase;
+  font-weight: 700;
+}
 
 
 @media (max-width: 992px) {
