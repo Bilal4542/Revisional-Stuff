@@ -479,3 +479,48 @@ footer{
     font-size: 16px;
 }
 }
+
+
+
+/* ============================= */
+/* 📱 MEDIA QUERIES */
+/* ============================= */
+
+/* Large Tablets (below 992px) */
+@media (max-width: 1024px) {
+  .images-main {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .images-container {
+    margin-top: 430px;
+  }
+
+}
+
+/* Tablets & Small Laptops (below 768px) */
+@media (max-width: 768px) {
+  .images-main {
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width: 90%;
+  }
+
+  .images-container {
+    margin-top: 300px;
+  }
+
+}
+
+/* Small Mobile Devices (below 480px) */
+@media (max-width: 480px) {
+  .images-main {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
+
+  .images-container {
+    margin-top: 200px;
+  }
+}
