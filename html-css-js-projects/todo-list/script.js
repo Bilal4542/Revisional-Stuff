@@ -1,0 +1,5 @@
+let inputField = document.querySelector('input')
+let submitBtn = document.querySelector('.submit')
+let clearAllBtn = document.querySelector('.clearall')
+let listItems = document.querySelector('ul')
+console.log(listItems)
