@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .img-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 90%;
+            margin: auto;
+            gap: 20px;
+        }
+
+        .img-container img {
+            width: 100%;
+        }
+
+        .main-container {
+            background-color: rgba(243, 243, 243, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            height: 400px;
+        }
+
+        .sub-container {
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .card{ 
+            padding-right: 20px;
+            border-right: 2px solid rgba(221, 221, 221, 1) ;
+            
+        }
+        .card:last-child{
+            border-right: none ;
+        }
+        @media (max-width: 768px) {
+            .img-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+             .card{ 
+                border-bottom: none;
+            
+        }
+        }
+        @media (max-width: 480px) {
+            .img-container {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+        }
+@media (max-width: 992px) {
+    .sub-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        border-right: none;
+        border-bottom: 2px solid rgba(221, 221, 221, 1);
+        padding-bottom: 20px;
+    }
+
+   
+
+    .main-container {
+        height: auto;
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .sub-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        border: none;
+        border-bottom: 2px solid rgba(221, 221, 221, 1);
+        padding-bottom: 20px;
+    }
+
+    .card:last-child {
+        border-bottom: none;
+    }
+
+    .main-container {
+        height: auto;
+        padding: 30px 0;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="img-container">
+        <img src="./Group 162.png" alt="">
+        <img src="./Group 163.png" alt="">
+        <img src="./Group 164.png" alt="">
+        <img src="./Group 165.png" alt="">
+        <img src="./Group 166.png" alt="">
+        <img src="./Group 167.png" alt="">
+    </div>
+    <div class="main-container">
+
+        <div class="sub-container">
+            <div class="card">
+                <h3>FLIGHT TICKETS</h3>
+                <p>Lorem ipsum dolor sit amet
+                    consectetur. Aliquet in interdum
+                    elementum nec massa sagittis
+                    elit at. Vel est lobortis et a ac
+                    dolor sit. Amet pellentesque
+                    cras et diam dui. Fermentum
+                    commodo porta sem elit mi.</p>
+            </div>
+            <div class="card">
+                <h3>HOTEL BOOKING</h3>
+                <p>Lorem ipsum dolor sit amet
+                    consectetur. Aliquet in interdum
+                    elementum nec massa sagittis
+                    elit at. Vel est lobortis et a ac
+                    dolor sit. Amet pellentesque
+                    cras et diam dui</p>
+            </div>
+            <div class="card">
+                <h3>TOUR</h3>
+                <p>Lorem ipsum dolor sit amet
+                    consectetur. Aliquet in interdum
+                    elementum nec massa sagittis
+                    elit at. Vel est lobortis et a ac
+                    dolor sit.</p>
+            </div>
+            <div class="card">
+                <h3>ACTIVITY</h3>
+                <p>Lorem ipsum dolor sit amet
+                    consectetur. Aliquet in interdum
+                    elementum nec massa sagittis
+                    elit at. Vel est lobortis et a ac
+                    dolor sit. Amet pellentesque
+                    cras et diam dui. Amet
+                    pellentesque cras et diam dui</p>
+            </div>
+        </div>
+    </div>
+
+
+  
+
+
+
+</body>
+
+</html>
