@@ -180,17 +180,14 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
-  .mt-16 {
-    margin-top: calc(var(--spacing) * 16);
-  }
-  .mb-2 {
-    margin-bottom: calc(var(--spacing) * 2);
-  }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
   }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
   }
   .mb-16 {
     margin-bottom: calc(var(--spacing) * 16);
@@ -216,14 +213,8 @@
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
   .flex-col {
     flex-direction: column;
-  }
-  .flex-wrap {
-    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -234,36 +225,16 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
-  .gap-10 {
-    gap: calc(var(--spacing) * 10);
-  }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
-  }
-  .gap-x-14 {
-    column-gap: calc(var(--spacing) * 14);
   }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-2 {
-    border-style: var(--tw-border-style);
-    border-width: 2px;
-  }
-  .border-r-2 {
-    border-right-style: var(--tw-border-style);
-    border-right-width: 2px;
-  }
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 2px;
-  }
-  .border-r-gray-400 {
-    border-right-color: var(--color-gray-400);
-  }
-  .border-r-gray-700 {
-    border-right-color: var(--color-gray-700);
   }
   .border-b-gray-400 {
     border-bottom-color: var(--color-gray-400);
@@ -274,17 +245,11 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
-  .pt-10 {
-    padding-top: calc(var(--spacing) * 10);
-  }
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
   }
   .pr-10 {
     padding-right: calc(var(--spacing) * 10);
-  }
-  .pr-11 {
-    padding-right: calc(var(--spacing) * 11);
   }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
@@ -303,9 +268,6 @@
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
   }
-  .text-\[16px\] {
-    font-size: 16px;
-  }
   .text-\[22px\] {
     font-size: 22px;
   }
@@ -319,9 +281,6 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
-  }
-  .text-\[rgba\(0\,0\,0\,1\)\] {
-    color: rgba(0,0,0,1);
   }
   .text-\[rgba\(202\,142\,0\,1\)\] {
     color: rgba(202,142,0,1);
