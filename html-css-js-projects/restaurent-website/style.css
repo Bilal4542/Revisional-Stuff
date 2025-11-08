@@ -34,6 +34,43 @@ nav{
     border-radius: 10px;
 }
 .links a:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
     transition-duration: all 5s;
+}
+.hero-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero{
+    margin-top: 60px;
+    width: 90%;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.tag{
+    background-color: green;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.hero-content h1{
+    font-size: 60px;
+}
+.explore-btn{
+    border: none;
+    background-color: rgb(249, 221, 63);
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
 }
