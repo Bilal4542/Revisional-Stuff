@@ -1,0 +1,58 @@
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image img{
+    width: 600px;
+}
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    animation: slide-in-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.contact-content input, textarea{
+    padding: 10px 20px;
+    width: 400px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+textarea{
+    height: 100px;
+}
+.contact-content button{
+    background-color: rgb(76, 17, 131);
+    color: white;
+    padding: 10px 30px;
+    border: none;border-radius: 10px;
+    cursor: pointer;
+}
+.contact-content button:hover{
+    background-color: white;
+    color: rgb(76, 17, 131);
+    transition-duration:1s;
+}
+
+
+
+
+
+
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
