@@ -148,9 +148,58 @@ footer{
     gap: 10px;
     margin-top: 10px;
 }
+.hamburger{
+    display: none;
+}
 
 
+@media all and (max-width: 500px) {
+   .main-footer{
+    flex-direction: column;
+    gap: 10px;
+}
+.hero{
+    flex-direction: column;
+}
+.hero-image{
+    width: 300px;
+}
+.hero-image img{
+    width: 100%;
+    margin-top: 20px;
+}
+.hero-content h1{
+    font-size: 30px;
+}
+.features{
+    flex-direction: column;
+    gap: 15px;
+    width: 95%;
+    align-items: flex-start;
+}
 
+
+}
+@media all and (max-width: 700px) {
+  .links{
+    display: none;
+    position: fixed;
+    top: 30px;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px 30px;
+    height: 100vh;
+    box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.9);
+  }
+  .hamburger{
+    display: block;
+  }
+  .links.active{
+    display: flex;
+  }
+}
 
 
 

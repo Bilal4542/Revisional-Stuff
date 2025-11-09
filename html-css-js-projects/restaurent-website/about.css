@@ -67,3 +67,20 @@ textarea{
     opacity: 1;
   }
 }
+
+@media all and (max-width: 500px) {
+    .contact-container{
+        flex-direction: column;
+        padding: 10px 20px;
+}
+.story{
+   text-align: center;
+
+}
+.image img{
+    width: 400px;
+}
+.contact-content{
+    width: 100%;
+}
+}

@@ -56,3 +56,17 @@ textarea{
     opacity: 1;
   }
 }
+
+
+@media all and (max-width: 500px) {
+    .contact-container{
+        flex-direction: column;
+        padding: 10px 20px;
+}
+.image img{
+    width: 400px;
+}
+.contact-content input, textarea{
+    width: 300px;
+}
+}
