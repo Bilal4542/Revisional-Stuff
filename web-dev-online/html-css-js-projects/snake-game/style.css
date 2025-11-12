@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(44, 40, 40);
+    color: rgb(231, 231, 231);
+    padding: 20px;
+}
+.infos{
+    display: flex;
+    justify-content: space-between;
+}
+.infos button{
+    padding: 8px;
+    border: 1px solid rgb(231, 231, 231);
+    background-color: rgb(44, 40, 40);
+    color: white;
+    border-radius: 10px;
+}
+.board{
+    border: 1px solid white;
+    flex-grow: 1;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(30px, 1fr));
+}
+.block{
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgb(82, 80, 80);
+}
