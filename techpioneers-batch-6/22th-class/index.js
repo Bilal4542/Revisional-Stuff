@@ -74,3 +74,45 @@ console.log(values);
 let numArray = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 numArray.reverse()
 console.log(numArray)
+
+
+// Check if a number is divisible by both 3 and 5. If both → “FizzBuzz”, if only 3 → “Fizz”, if only 5 → “Buzz”, else → “Nothing”.
+
+let yourNum = 22
+if(yourNum % 3 === 0 && yourNum % 5 === 0){
+    console.log('FizzBuzz')
+}else if(yourNum % 3 === 0){
+    console.log('Fizz')
+}else if(yourNum % 5 === 0){
+    console.log('Buzz')
+}else{
+    console.log('Nothing')
+}
+
+// Take 3 numbers and check the largest using if-else only
+
+let a = 9
+let b = 4
+let c = 6
+if(a > b && a > c){
+    console.log(a + ' is Greater')
+}else if(b > a && b > c){
+    console.log(b + ' is greater')
+}else{
+    console.log(c + ' is Greater')
+}
+
+// Check if a character is a vowel or consonant using if-else.
+let character = 'i'
+if(character === 'a' || character === 'i' || character === 'o' || character === 'e' || character === 'u'){
+    console.log('Vowel')
+}else{
+    console.log('constant')
+}
+
+
+// Create an array of 6 items. Remove 2 items from the middle using .splice().
+
+let item = ['Bilal', 'Anees', 'Awais', 'Laiba', 'Zainab', 'Masooma']
+item.splice(3,2)
+console.log(item)
