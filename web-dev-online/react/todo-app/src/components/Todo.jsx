@@ -2,23 +2,7 @@ import React, { useState } from 'react'
 import Item from './Item'
 
 const Todo = () => {
-    const [list, setList] = useState([
-        {
-            id: 1,
-            name: 'React',
-            status: 'completed'
-        },
-        {
-            id: 2,
-            name: 'Nodejs',
-            status: 'pending'
-        },
-        {
-            id: 3,
-            name: 'CSS',
-            status: 'completed'
-        },
-])
+    const [list, setList] = useState([])
 
 const [input, setInput] = useState('')
 
@@ -36,6 +20,25 @@ const handleSubmit = (e) => {
     }
     const prevTask = list
     setList([...prevTask, task])
+    setInput('')
+}
+
+const doneHandler = (id) => {
+    const updatedList = list.map((element)=>{
+        if(element.id === id) element.status = 'completed'
+        return element;
+    })
+    setList(updatedList)
+    
+    
+}
+const deleteHandler = (id) => {
+    const updatedList = list.filter((element)=>{
+      return  element.id !== id
+      
+    })
+    setList(updatedList)
+
 }
 
 const handleClearAll = () => {
@@ -58,10 +61,10 @@ const handleClearAll = () => {
             <h1 className='text-2xl font-semibold mt-4'>Your Task</h1>
             <ul>
             {list.map((element) => {
-                return <li><Item list={element}/></li>
+                return <li><Item list={element} doneItem={doneHandler} deleteItem={deleteHandler}/></li>
             })}
             </ul>
-        <button onClick={handleClearAll} className='bg-gray-300 mt-8 px-6 py-2 rounded-xl cursor-pointer hover:scale-102 duration-300'>Clear All</button>
+        {list.length !== 0 && <button onClick={handleClearAll} className='bg-gray-300 mt-8 px-6 py-2 rounded-xl cursor-pointer hover:scale-102 duration-300'>Clear All</button>}
         </div>
     </div>
   )
