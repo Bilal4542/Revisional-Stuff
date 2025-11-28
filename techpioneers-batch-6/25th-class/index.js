@@ -143,5 +143,50 @@ console.log(updatedProducts)
 let people = [
   { name: "Omer", age: 30 },
   { name: "Ali", age: 40 },
-  { name: "Hina", age: 25 }
+  { name: "Hina", age: 48 }
 ];
+let oldest = people[0]
+for(let i =0; i < people.length; i++){
+  if(people[i].age > oldest.age){
+    oldest = people[i]
+  }
+}
+console.log(oldest)
+
+// Print only the tasks that are marked as completed.
+let tasks = [
+  { task: "Wash dishes", completed: true },
+  { task: "Study", completed: false },
+  { task: "Exercise", completed: true }
+];
+for(let i = 0; i < tasks.length; i++){
+  if(tasks[i].completed === true){
+    console.log(tasks[i].task)
+  }
+}
+
+// Find all books with more than 300 pages and store them in a new array.
+let books = [
+  { title: "Book A", pages: 250 },
+  { title: "Book B", pages: 350 },
+  { title: "Book C", pages: 500 }
+];
+let largeBooks = []
+for(let i = 0; i < books.length; i++){
+  if(books[i].pages > 300){
+    largeBooks.push(books[i])
+  }
+}
+console.log(largeBooks)
+
+// Given an array of orders, calculate the total price (sum of all prices).
+let orders = [
+  { item: "Burger", price: 350 },
+  { item: "Pizza", price: 900 },
+  { item: "Fries", price: 150 }
+];
+let total = 0
+for(let i = 0; i < orders.length; i++){
+  total = total + orders[i].price
+}
+console.log(total)
