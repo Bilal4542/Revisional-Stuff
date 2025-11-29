@@ -190,3 +190,20 @@ for(let i = 0; i < orders.length; i++){
   total = total + orders[i].price
 }
 console.log(total)
+
+// Use a for loop to print all numbers from 1 to 50, but print "Even" for even numbers and "Odd" for odd numbers.
+for(let i = 0; i <= 50; i++){
+  if(i % 2 === 0){
+    console.log(i + ' is Even number')
+  }else{
+    console.log(i + ' is Odd number')
+  }
+}
+
+// Use a while loop to print numbers from 10 down to 1.
+let count = 10
+while(count >= 1){
+  console.log(count)
+  count--
+}
+console.log('loop finished')
