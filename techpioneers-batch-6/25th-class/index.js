@@ -206,4 +206,13 @@ while(count >= 1){
   console.log(count)
   count--
 }
-console.log('loop finished')
+
+// Create an array of numbers and use a for loop to find the largest number.
+let num = [12,14,17,24,55,62,99,155]
+let largestNum = num[0]
+for(let i = 0; i < num.length; i++){
+  if(num[i] > largestNum){
+    largestNum = num[i]
+  }
+}
+console.log('The Largest Num is ' + largestNum + ' in the given array.')  
