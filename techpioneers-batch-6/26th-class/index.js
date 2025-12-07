@@ -241,3 +241,6 @@ let discountedPrice = cheapProducts.map((product) => {
     }
 })
 console.log(discountedPrice)
+
+
+
