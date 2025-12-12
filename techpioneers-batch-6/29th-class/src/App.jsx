@@ -1,6 +1,8 @@
 import react from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import Cards from './components/Cards'
+import NewArrivalCards from './components/NewArrivalCards'
 
 function App() {
 
@@ -8,6 +10,8 @@ function App() {
     <>
        <Navbar/>
        <Hero/>
+       <Cards/>
+       <NewArrivalCards/>
     </>
   )
 }
