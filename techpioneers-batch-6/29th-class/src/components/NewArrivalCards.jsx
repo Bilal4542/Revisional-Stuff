@@ -6,13 +6,11 @@ import newArrivalImage4 from '../assets/newArrivalImage4.png'
 
 const NewArrivalCards = () => {
   return (
-    <div className="flex items-center justify-center flex-col mt-10">
-        <div className="flex items-center justify-between">
+    <div className="flex items-center justify-end gap-x-36 flex-col my-10">
+        <div className="flex items-center justify-between w-[90%] my-10">
             <div className=""></div>
-            <h1 className=''>New Arrival</h1>
-            <div className="justify-end">
-                <a className='' href="">View All</a>
-            </div>
+            <div className=""><h1 className='text-4xl uppercase font-bold'>New Arrival</h1></div>
+            <div className=""><a href="" className='text-[rgba(255,191,61,1)] font-bold text-[20px] uppercase mr-1'>View All</a></div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-10 w-[90%]">
           <div className="">
