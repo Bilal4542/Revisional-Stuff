@@ -20,7 +20,7 @@ function App() {
             </Menu.Button>
             <Menu.Items className='absolute right-0 mt-2 w-48 shadow-lg p-2 z-10'>
               <Menu.Item>
-                <button className='w-full text-left px-4 py-2 rounded-lg capitalize'>
+                <button className='w-full text-left px-4 py-2 rounded-lg capitalize bg-blue-500 text-white'>
                   status
                 </button>
               </Menu.Item>
