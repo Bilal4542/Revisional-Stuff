@@ -1,6 +1,0 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Righteous&display=swap');
-@import "tailwindcss";
-
- .clip-path-custom {
-    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
-  }
