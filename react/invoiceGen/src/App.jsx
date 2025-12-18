@@ -1,11 +1,13 @@
 import React from 'react'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { ChevronRight, Filter, Plus, Trash2, X } from 'lucide-react'
+import {Provider} from 'react-redux'
+import store from './store/store'
 
 function App() {
 
   return (
-    <>
+    <Provider store={store}>
       {/* Start of Invoice Header */}
          <div className='flex items-center justify-between'>
       <div className="">
@@ -95,14 +97,22 @@ function App() {
                           <input type="text" placeholder='Product Description' required  className='p-3 rounded-lg w-full outline-none bg-blue-400'/>
                         </div>
                         <div className="space-y-4">
-                          <h3>Item List</h3>
+                          <h3 className='text-white font-bold'>Item List</h3>
                           <div className="grid grid-cols-12 items-center gap-4">
                             <input type="text" placeholder='Item Name' className='col-span-5 p-3 rounded-lg outline-none bg-blue-400' />
                             <input type="number" placeholder='Quantity' className='col-span-2 p-3 rounded-lg outline-none bg-blue-400' min="1" required />
                             <input type="number" placeholder='Price' className='col-span-2 p-3 rounded-lg outline-none bg-blue-400' min="0" step="0.01" required />
                             <div className="col-span-2 text-right text-white">TotalAmount</div>
-                            <button type='button' className='text-white'> <Trash2 size={20}/> </button>
+                            <button type='button' className='text-white hover:text-red-600 transition-all ease-in-out duration-300 cursor-pointer'> <Trash2 size={20}/> </button>
                           </div>
+                          <button type='button' className='flex items-center justify-center space-x-2 p-3 rounded-lg w-full bg-blue-600 hover:bg-blue-700 transition-all ease-in-out duration-300 cursor-pointer text-white'>
+                            <Plus size={20}/>
+                            <span>Add New Item</span>
+                          </button>
+                        </div>
+                        <div className="flex justify-end space-x-4">
+                          <button type='button' className='rounded-full bg-blue-600 hover:bg-blue-700 px-6 py-3 text-white cursor-pointer transition-all ease-in-out duration-300'>Cancel</button>
+                          <button type='button' className='rounded-full bg-blue-600 hover:bg-blue-700 px-6 py-3 text-white cursor-pointer transition-all ease-in-out duration-300'>Create Invoice</button>
                         </div>
                     </form>
                   </div>
@@ -111,7 +121,8 @@ function App() {
           </div>
 
       {/* End of Invoice List */}
-    </>
+    </Provider>
+    
   )
 }
 
