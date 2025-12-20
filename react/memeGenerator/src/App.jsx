@@ -1,6 +1,7 @@
 import React from 'react'
 import Home from './pages/Home'
 import {Routes, Route} from 'react-router-dom'
+import Edit from './pages/Edit'
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <h1>MEME Generator</h1>
       <Routes>
         <Route path='/' element={<Home/>} />
+        <Route path='/edit' element={ <Edit/> }/>
       </Routes>
     </div>
   )

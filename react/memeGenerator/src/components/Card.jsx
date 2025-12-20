@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Card = (props) => {
+    const navigate = useNavigate();
   return (
     <div className="">
       <div className="flex items-center justify-center p-6">
@@ -20,7 +22,7 @@ const Card = (props) => {
           </h3>
 
           {/* Button */}
-          <button className="mt-6 inline-flex items-center gap-2 rounded-lg bg-green-600 cursor-pointer hover:bg-green-700 ease-in-out duration-300 px-4 py-2 font-medium  transition">
+          <button onClick={e=>navigate(`/edit?url=${props.img}`)} className="mt-6 inline-flex items-center gap-2 rounded-lg bg-green-600 cursor-pointer hover:bg-green-700 ease-in-out duration-300 px-4 py-2 font-medium  transition">
             Edit <span className="text-lg">→</span>
           </button>
         </div>
