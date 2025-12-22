@@ -1,17 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from "framer-motion";;
 
 const Text = () => {
+  const [editMode, setEditMode] = useState(false)
+  const [val, setVal] = useState('Double Click to Edit')
+
+   const handleEditStart = () => {
+    setEditMode(true)
+    if (val === 'Double Click to Edit') {
+      setVal('')
+    }
+  }
   return (
-      // <Draggable bounds='parent'>
-      //   <h2 className='text-2xl'>I am Text</h2>
-      // </Draggable>
       <>
       <motion.div
         drag                  // Makes it draggable
-        dragMomentum={true}   // Adds inertia when you release
+        dragMomentum={false}   // Adds inertia when you release
         className="cursor-move select-none">
-        <h2 className="text-2xl font-bold">I am draggable</h2>
+        {
+          editMode
+          ?
+          <input className='border border-gray-400 p-2 text-xl font-semibold rounded-lg mt-1' value={val} onDoubleClick={(e)=>setEditMode(false)}  onChange={(e)=>setVal(e.target.value)}/>
+          :
+          <h2 className="text-2xl font-bold" onDoubleClick={handleEditStart}>{val}</h2>
+        }
       </motion.div>
       </>
   )
