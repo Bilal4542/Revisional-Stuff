@@ -6,7 +6,7 @@ import Edit from './pages/Edit'
 const App = () => {
   return (
     <div>
-      <h1 className='text-4xl text-center my-4 font-black'>MEME Generator</h1>
+     
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/edit' element={ <Edit/> }/>

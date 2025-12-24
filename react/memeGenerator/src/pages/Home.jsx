@@ -11,6 +11,8 @@ const Home = () => {
         getAllMemes().then((memes)=> setData(memes.data.memes))
     },[])
   return (
+    <>
+     <h1 className='text-4xl text-center my-4 font-black'>MEME Generator</h1>
   <div className="flex items-center justify-center">
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-[90%]'>
         {data.map((item)=>
@@ -19,6 +21,7 @@ const Home = () => {
       
     </div>
   </div>
+  </>
   )
 }
 
